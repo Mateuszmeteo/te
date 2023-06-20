@@ -18,13 +18,13 @@ export const Header = () => {
         }
       };
     
-      useEffect(() => {
-        document.addEventListener('click', handleMenuOutsideClick);
+    //   useEffect(() => {
+    //     document.addEventListener('click', handleMenuOutsideClick);
     
-        return () => {
-          document.removeEventListener('click', handleMenuOutsideClick);
-        };
-      }, []);
+    //     return () => {
+    //       document.removeEventListener('click', handleMenuOutsideClick);
+    //     };
+    //   }, []);
 
     return (
         <div className={styles.head__div}>
@@ -33,7 +33,7 @@ export const Header = () => {
                 <button>0000</button>
                 <button>9999</button>
             </div>
-            <div>
+            <div className={styles.head__divBtnMenu}>
                 <button onClick={toggleMenu} >menu</button>
                 {isMenuOpen && (
                     <ul className={styles.head__menuList}>
