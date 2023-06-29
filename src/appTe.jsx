@@ -24,7 +24,8 @@ export const AppTe = () => {
                 title={cardAboutAgency.title}
                 subtitle={cardAboutAgency.subtitle}
                 paragraf={cardAboutAgency.paragraf}
-                about={cardAboutAgency.about}  
+                modalTitle={cardAboutAgency.modal.modalTitle}
+                modalDescription={cardAboutAgency.modal.modalDescription}  
                 />
             </HomePage>
             <p>kobenhawffeedxcvhbjkl</p>

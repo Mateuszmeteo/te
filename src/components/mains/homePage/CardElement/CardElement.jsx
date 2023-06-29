@@ -2,7 +2,7 @@ import styles from './cardElement.module.scss'
 import { useState } from 'react';
 import { ModalCard } from './ModalCard/ModalCard';
 
-export const CardElement = ({title, subtitle, paragraf, about}) => {
+export const CardElement = ({title, subtitle, paragraf, modalTitle, modalDescription}) => {
 
 const [modalVisible, setModalVisible] = useState(false);
 
@@ -22,7 +22,8 @@ const [modalVisible, setModalVisible] = useState(false);
 
             {modalVisible && (
             <ModalCard onClose={closeModal} 
-            about={about.head}{about.lorem}/>)}
+            modalTitle={modalTitle}
+            modalDescription={modalDescription}/>)}
       
         </div>
     )

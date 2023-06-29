@@ -2,8 +2,10 @@
     "title": "Element About Agency",
     "subtitle": "Music Agency",
     "paragraf": "Lorem ipsum - paragraf agency",
-    "about": {
-        "head": "Lorem Title about",
-        "lorem": "Lorem - opis About"
+    "modal" : {
+        "modalTitle": "Lorem Title about",
+        "modalDescription": "Lorem - opis About"
     }
+    
+    
 }
