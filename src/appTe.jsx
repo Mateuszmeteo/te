@@ -7,7 +7,6 @@ import { AboutSection } from "./components/mains/homePage/AboutSection/AboutSect
 import { Container } from "./components/mains/Container/Container"
 import { ContactCard } from "./components/mains/homePage/Contact/ContactCard"
 import { ContactOffice } from "./components/mains/homePage/Contact/ContactOffice/ContactOffice"
-import { ContactMusicStudio } from "./components/mains/homePage/Contact/ContactMusicStudio/ContactMusicStudio"
 
 import elhome from './components/data/elhome.json'
 import cardAboutAgency from './components/data/cardAboutAgency.json'
@@ -38,7 +37,7 @@ export const AppTe = () => {
                             subtitle={cardAboutAgency.subtitle}
                             paragraf={cardAboutAgency.paragraf}
                             modalTitle={cardAboutAgency.modal.modalTitle}
-                        modalDescription={cardAboutAgency.modal.modalDescription} />
+                            modalDescription={cardAboutAgency.modal.modalDescription} />
                     </Container>
                 </Section>
                 <Section>
@@ -49,12 +48,16 @@ export const AppTe = () => {
                                 email={contactOffice.email}
                                 tel={contactOffice.tel}
                                 add={contactOffice.add}
-                                form={contactOffice.form} />
-                            <ContactMusicStudio 
+                                form={contactOffice.form}
+                                btnFormName={contactOffice.btnFormName}
+                                formSrc={contactOffice.formSrc} />
+                            <ContactOffice 
                                 name={contactMusicStudio.name}
                                 email={contactMusicStudio.email}
                                 tel={contactMusicStudio.tel}
-                                form={contactMusicStudio.form}/>
+                                form={contactMusicStudio.form}
+                                btnFormName={contactMusicStudio.btnFormName}
+                                formSrc={contactMusicStudio.formSrc}/>
                         </ContactCard>
                     </Container>
                 </Section>
