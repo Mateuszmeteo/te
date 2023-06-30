@@ -4,9 +4,12 @@ import { HomePage } from "./components/mains/homePage/homePage"
 import { CardElement } from "./components/mains/homePage/CardElement/CardElement"
 import { Section } from "./components/mains/Section/Section"
 import { AboutSection } from "./components/mains/homePage/AboutSection/AboutSection"
-import { Container } from "./components/mains/Container/Container"
+import { Container } from "./components/Container/Container"
 import { ContactCard } from "./components/mains/homePage/Contact/ContactCard"
 import { ContactOffice } from "./components/mains/homePage/Contact/ContactOffice/ContactOffice"
+import {  MobileMenu } from "./components/header/MobileMenu/MobileMenu"
+import { Logo } from "./components/header/Logo/Logo"
+import { ButtonsMenu } from "./components/header/ButtonsMenu/ButtonsMenu"
 
 import elhome from './components/data/elhome.json'
 import cardAboutAgency from './components/data/cardAboutAgency.json'
@@ -19,7 +22,13 @@ import contactMusicStudio from './components/data/contactMusicStudio.json'
 export const AppTe = () => {
     return (
         <div>
-            <Header />
+            <Header>
+                <Container>
+                    <Logo />
+                    <ButtonsMenu />
+                    <MobileMenu />
+                </Container>
+            </Header>
             <HomePage>
                 <Section>
                     <Container>
