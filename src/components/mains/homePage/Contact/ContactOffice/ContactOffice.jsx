@@ -20,7 +20,6 @@ export const ContactOffice = ({ name, email, tel, add, form, btnFormName, formSr
     }
 
 
-
     return(
         <div className={styles.contactDiv}>
             <h3>{name}</h3>
