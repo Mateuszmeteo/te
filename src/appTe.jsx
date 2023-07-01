@@ -16,6 +16,7 @@ import elhome from './components/data/elhome.json'
 import cardAboutAgency from './components/data/cardAboutAgency.json'
 import contactOffice from './components/data/contactOffice.json'
 import contactMusicStudio from './components/data/contactMusicStudio.json'
+import { HeadDivCont } from "./components/header/HeadDivCont/HeadDivCont"
 
 
 
@@ -25,9 +26,11 @@ export const AppTe = () => {
         <div>
             <Header>
                 <Container>
-                    <Logo />
-                    <ButtonsMenu />
-                    <MobileMenu />
+                    <HeadDivCont>
+                        <Logo />
+                        <ButtonsMenu />
+                        <MobileMenu />
+                    </HeadDivCont>
                 </Container>
             </Header>
             <HomePage>

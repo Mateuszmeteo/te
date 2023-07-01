@@ -1,11 +1,10 @@
 @import './../../global.module.scss';
 
 
-// .head__divBtn {
-//     @include tablet {
-//         display: none;
-//     }
-// }
+.head__divBtn {
+    background-color: darkkhaki;
+
+}
 
 @media screen and (max-width: 767px) {
     .head__divBtn {
