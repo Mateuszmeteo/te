@@ -10,6 +10,7 @@ import { ContactOffice } from "./components/mains/homePage/Contact/ContactOffice
 import {  MobileMenu } from "./components/header/MobileMenu/MobileMenu"
 import { Logo } from "./components/header/Logo/Logo"
 import { ButtonsMenu } from "./components/header/ButtonsMenu/ButtonsMenu"
+import { Cards } from "./components/mains/homePage/Cards/Cards"
 
 import elhome from './components/data/elhome.json'
 import cardAboutAgency from './components/data/cardAboutAgency.json'
@@ -37,17 +38,19 @@ export const AppTe = () => {
                 </Section>
                 <Section background={"cardSection"}>
                     <Container>
-                        <CardElement 
+                        <Cards>
+                            <CardElement 
                             title={elhome.title}
                             subtitle={elhome.subtitle}
                             paragraf={elhome.paragraf} />
-                        <CardElement 
+                            <CardElement 
                             title={cardAboutAgency.title}
                             subtitle={cardAboutAgency.subtitle}
                             paragraf={cardAboutAgency.paragraf}
                             modalTitle={cardAboutAgency.modal.modalTitle}
                             modalDescription={cardAboutAgency.modal.modalDescription} />
-                    </Container>
+                        </Cards>
+                        </Container>
                 </Section>
                 <Section>
                     <Container>

@@ -1,11 +1,14 @@
 
-
+@import './../../global.module.scss';
 
 
 
 
     .head__divBtnMenu {
         position: relative;
+        @include tablet {
+            display: none;
+        }
     }
     
 

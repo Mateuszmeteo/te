@@ -1,15 +1,27 @@
+@import '../../../global.module.scss';
+
 
 .contactCard {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.btnForm {
+    margin-bottom: 20px;
 }
 
 
 .contactDiv {
     background-color: hotpink;
-    width: 320px;
-    height: 250px;
+    width: 280px;
+    // height: 320px;
     border-radius: 4px;
+    @include tablet {
+        width: 320px;
+    }
 }
+
 
 

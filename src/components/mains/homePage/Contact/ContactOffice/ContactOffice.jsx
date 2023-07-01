@@ -30,7 +30,7 @@ export const ContactOffice = ({ name, email, tel, add, form, btnFormName, formSr
                 <p>{form}</p>
             </div>
          
-            <button onClick={handleOpenModal}>{btnFormName}</button>
+            <button className={styles.btnForm} onClick={handleOpenModal}>{btnFormName}</button>
 
             {isModalOpen && (
             <ModalForm onClose={handleCloseModal}>

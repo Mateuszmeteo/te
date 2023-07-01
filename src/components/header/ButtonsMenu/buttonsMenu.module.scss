@@ -1,0 +1,14 @@
+@import './../../global.module.scss';
+
+
+// .head__divBtn {
+//     @include tablet {
+//         display: none;
+//     }
+// }
+
+@media screen and (max-width: 767px) {
+    .head__divBtn {
+        display: none;
+    }
+}
